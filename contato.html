@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <title>Contato e Suporte - PedZap</title>
+    <style>
+        body { padding: 0; margin: 0; }
+        .container { max-width: 600px; margin: 30px auto; }
+        main > header { text-align: center; }
+    </style>
+</head>
+<body>
+    <div id="nav-container"></div>
+    <main class="container">
+        <header>
+            <h1>📞 Contato e Suporte</h1>
+        </header>
+        <form id="contato-form">
+            <label for="nome">Nome
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+            </label>
+            <label for="email">E-mail
+                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+            </label>
+            <label for="whatsapp">WhatsApp
+                <input type="text" id="whatsapp" name="whatsapp" required placeholder="(99) 99999-9999">
+            </label>
+            <label for="assunto">Assunto
+                <input type="text" id="assunto" name="assunto" required placeholder="Ex: Dúvida, Suporte, Sugestão">
+            </label>
+            <label for="descricao">Descrição
+                <textarea id="descricao" name="descricao" rows="4" required placeholder="Descreva sua dúvida ou solicitação..."></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="contato-msg" style="margin-top:20px;"></div>
+    </main>
+    <script src="nav-loader.js"></script>
+    <script src="contato.js" defer></script>
+</body>
+</html>

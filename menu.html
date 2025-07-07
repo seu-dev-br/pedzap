@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <title>Gerenciar Cardápio - PedZap</title>
+    <style>
+        /* O padding foi removido do body para a barra de navegação ocupar toda a largura */
+        body { padding: 0; margin: 0; }
+        /* O container agora centraliza e adiciona o espaçamento ao conteúdo principal */
+        .container { max-width: 960px; margin: 20px auto; }
+        main > header { text-align: center; }
+    </style>
+</head>
+<body>
+    <div id="nav-container"></div>
+
+    <main class="container">
+        <header>
+            <h1>🍕 Gerenciamento de Cardápio</h1>
+        </header>
+
+        <article>
+            <h2 id="form-title">Adicionar Novo Item</h2>
+            <form id="menu-form">
+                <div class="grid">
+                    <label for="category" style="position:relative;">
+                        Categoria
+                        <select id="category" name="category" required></select>
+                        <button type="button" id="manage-categories-btn" style="margin-top:6px; margin-left:8px; font-size:0.9em;">Gerenciar Categorias</button>
+                        <div id="manage-categories-area" style="display:none; margin-top:10px;">
+                            <ul id="categories-manage-list" style="list-style: none; padding: 0; margin-bottom: 0;"></ul>
+                        </div>
+                    </label>
+                    <label for="name">
+                        Nome do Produto
+                        <input type="text" id="name" name="name" placeholder="Ex: Calabresa" required>
+                    </label>
+                </div>
+                
+                <label for="price">
+                    Preço (R$)
+                    <input type="number" id="price" name="price" step="0.01" placeholder="Ex: 35.50" required>
+                </label>
+
+                <label for="description">Descrição</label>
+                <textarea id="description" name="description" rows="3" placeholder="Ingredientes do produto..."></textarea>
+                
+                <button type="submit">Salvar Item</button>
+            </form>
+        </article>
+
+        <hr>
+
+        <article>
+            <h2>Cardápio Atual</h2>
+            <figure>
+                <table role="grid" id="menu-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Preço</th>
+                            <th scope="col">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="menu-table-body">
+                        <tr>
+                            <td colspan="4" style="text-align: center;">Carregando cardápio...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </figure>
+        </article>
+    </main>
+
+    <script src="nav-loader.js"></script>
+    <script src="menu.js" defer></script>
+</body>
+</html>

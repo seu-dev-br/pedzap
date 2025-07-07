@@ -1,0 +1,42 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+
+# Build output
+build/
+dist/
+frontend/build/
+frontend/dist/
+
+# Environment files
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Database
+*.db
+
+# Outros arquivos temporários
+*.tgz
+*.swp
+
+# Baileys Auth (dados sensíveis)
+baileys_auth/
+
+# Imagens de cache ou temporárias
+frontend/public/imagens/*.tmp 

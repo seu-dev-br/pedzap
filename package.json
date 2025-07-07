@@ -1,0 +1,45 @@
+{
+  "name": "pedzap-desktop",
+  "version": "1.0.0",
+  "description": "Aplicativo de desktop para gerenciamento de pedidos via WhatsApp",
+  "main": "main.js",
+  "scripts": {
+    "dev:web": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "node server.js",
+    "dev:frontend": "npm start --prefix frontend",
+    "build:frontend": "npm run build --prefix frontend",
+    "start:electron": "npm run build:frontend && npx electron .",
+    "dev:electron": "concurrently \"npm run dev:backend\" \"npm run start:electron\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "./",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.50.3",
+    "@whiskeysockets/baileys": "^6.7.18",
+    "axios": "^1.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
+    "electron": "^37.2.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^7.0.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^6.23.1",
+    "sqlite3": "^5.1.7",
+    "stripe": "^18.3.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "concurrently": "^8.2.2",
+    "eslint": "^9.30.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-unused-imports": "^4.1.4"
+  }
+}

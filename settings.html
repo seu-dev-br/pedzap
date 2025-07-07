@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <title>Configurações - PedZap</title>
+    <style>
+        body { padding: 0; margin: 0; }
+        .container { max-width: 960px; margin: 20px auto; }
+        main > header { text-align: center; }
+    </style>
+</head>
+<body>
+    <div id="nav-container"></div> <main class="container">
+        <header>
+            <h1>⚙️ Configurações do Robô</h1>
+            <p>Personalize as mensagens que seu robô enviará aos clientes.</p>
+        </header>
+
+        <form id="settings-form">
+            <div id="fields-container">
+                <progress></progress> </div>
+            <button type="submit">Salvar Alterações</button>
+        </form>
+    </main>
+
+    <script src="nav-loader.js"></script>
+    <script src="settings.js" defer></script>
+</body>
+</html>

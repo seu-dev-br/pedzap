@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <title>Conectar WhatsApp - PedZap</title>
+    <style>
+        body { padding: 0; margin: 0; }
+        .container { max-width: 500px; margin: 40px auto; text-align: center; }
+        #qr-img { margin: 20px auto; display: block; }
+    </style>
+</head>
+<body>
+    <div id="nav-container"></div>
+    <main class="container">
+        <header>
+            <h1>Conectar WhatsApp</h1>
+            <p>Escaneie o QR Code abaixo com o WhatsApp do restaurante para ativar o robô.</p>
+        </header>
+        <div id="qr-container">
+            <p>Carregando QR Code...</p>
+        </div>
+        <p id="status-msg"></p>
+    </main>
+    <script src="nav-loader.js"></script>
+    <script src="waConnect.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <title>Pedidos - PedZap</title>
+    <style>
+        body { padding: 0; margin: 0; }
+        .container { max-width: 1100px; margin: 20px auto; }
+        main > header { text-align: center; }
+        .status-aberto { color: #e67e22; }
+        .status-finalizado { color: #27ae60; }
+        .status-entrega { color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div id="nav-container"></div>
+    <main class="container">
+        <header>
+            <h1>📦 Pedidos Recebidos</h1>
+            <p>Acompanhe e gerencie os pedidos em tempo real.</p>
+            <button id="print-btn" style="float:right;">🖨️ Imprimir</button>
+        </header>
+        <section>
+            <table role="grid" id="orders-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Status</th>
+                        <th>Cliente</th>
+                        <th>Itens</th>
+                        <th>Obs.</th>
+                        <th>Endereço</th>
+                        <th>Pagamento</th>
+                        <th>Total</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="orders-table-body">
+                    <tr><td colspan="9" style="text-align:center;">Carregando pedidos...</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="nav-loader.js"></script>
+    <script src="orders.js" defer></script>
+</body>
+</html>
