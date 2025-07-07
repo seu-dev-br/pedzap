@@ -1,0 +1,199 @@
+/* Botões principais */
+.ant-btn-primary {
+  background-color: var(--color-verde-impulso) !important;
+  border-color: var(--color-verde-impulso) !important;
+  color: white !important;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+.ant-btn-primary:hover, .ant-btn-primary:focus {
+  background: #00b37a !important;
+  border-color: #00b37a !important;
+  box-shadow: 0 4px 16px 0 rgba(0, 196, 140, 0.15);
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Botões secundários */
+.ant-btn:not(.ant-btn-primary) {
+  background-color: var(--color-azul-confianca) !important;
+  border-color: var(--color-azul-confianca) !important;
+  color: var(--color-branco-nuvem) !important;
+}
+.ant-btn:not(.ant-btn-primary):hover, .ant-btn:not(.ant-btn-primary):focus {
+  background: #1e3a5f !important;
+  border-color: #1e3a5f !important;
+  transition: background 0.2s;
+}
+
+/* Cards */
+.ant-card, .custom-card {
+  background-color: var(--color-branco-nuvem) !important;
+  border: 1px solid #e0e0e0 !important;
+  transition: box-shadow 0.2s, transform 0.15s;
+}
+.ant-card:hover, .custom-card:hover {
+  box-shadow: 0 8px 32px 0 rgba(42, 77, 140, 0.18);
+  transform: translateY(-3px) scale(1.01);
+}
+
+/* Sidebar/Menu */
+.ant-menu-item {
+  transition: background 0.2s, color 0.2s;
+  color: var(--color-grafite-focado) !important;
+}
+.ant-menu-item-selected {
+  background: var(--color-azul-confianca) !important;
+  color: var(--color-branco-nuvem) !important;
+}
+
+/* Light mode ajustes */
+body.light-mode {
+  background: var(--color-branco-nuvem) !important;
+  color: var(--color-grafite-focado) !important;
+}
+body.light-mode .ant-layout {
+  background: var(--color-branco-nuvem) !important;
+}
+body.light-mode .ant-card, body.light-mode .custom-card {
+  background: var(--color-branco-nuvem) !important;
+  box-shadow: 0 4px 24px 0 rgba(42, 77, 140, 0.06);
+}
+body.light-mode .ant-menu {
+  background: #f1f5f9 !important;
+}
+body.light-mode .ant-menu-item-selected {
+  background: var(--color-azul-confianca) !important;
+  color: var(--color-branco-nuvem) !important;
+}
+
+/* Dark mode ajustes */
+body:not(.light-mode) .ant-layout-sider,
+body:not(.light-mode) .ant-menu {
+  background: #23263a !important;
+}
+
+body:not(.light-mode) .ant-menu-item,
+body:not(.light-mode) .ant-menu-submenu-title {
+  color: #cbd5e1 !important;
+}
+
+body:not(.light-mode) .ant-menu-item-selected {
+  background: var(--color-azul-confianca) !important;
+  color: var(--color-branco-nuvem) !important;
+  font-weight: 700;
+}
+
+body:not(.light-mode) .ant-menu-item:hover,
+body:not(.light-mode) .ant-menu-item-active {
+  background: #334155 !important;
+  color: #fff !important;
+}
+
+body:not(.light-mode) .ant-menu-item .anticon,
+body:not(.light-mode) .ant-menu-submenu-title .anticon {
+  color: #cbd5e1 !important;
+}
+
+/* Forçar fundo escuro em cards customizados e caixas de mensagem no dark mode */
+body:not(.light-mode) .custom-card,
+body:not(.light-mode) .bot-message-card,
+body:not(.light-mode) .ant-card,
+body:not(.light-mode) .ant-card-body,
+body:not(.light-mode) .ant-card-bordered {
+  background: #23263a !important;
+  color: #f1f5f9 !important;
+}
+
+body:not(.light-mode) .ant-card-bordered {
+  border-color: #334155 !important;
+}
+
+/* Forçar fundo escuro em TODOS os ant-form-item e divs internas no dark mode */
+body:not(.light-mode) .ant-form-item,
+body:not(.light-mode) .ant-form-item[style],
+body:not(.light-mode) .ant-form-item .ant-form-item,
+body:not(.light-mode) .ant-form-item .ant-form-item[style] {
+  background: #23263a !important;
+  color: #f1f5f9 !important;
+  border-radius: 8px !important;
+}
+
+body:not(.light-mode) .ant-form-item > div[style*="background"],
+body:not(.light-mode) .ant-form-item > div,
+body:not(.light-mode) .ant-form-item-control-input-content {
+  background: #23263a !important;
+  color: #f1f5f9 !important;
+}
+
+body:not(.light-mode) [style*="background: #fff"],
+body:not(.light-mode) [style*="background: rgb(246, 248, 250)"],
+body:not(.light-mode) [style*="background: #f6f8fa"] {
+  background: #23263a !important;
+  color: #f1f5f9 !important;
+}
+
+body:not(.light-mode) .ant-form-item-label label,
+body:not(.light-mode) .ant-form-item-label b {
+  color: #f1f5f9 !important;
+}
+
+body:not(.light-mode) .ant-input {
+  background: #181924 !important;
+  color: #f1f5f9 !important;
+  border-color: #334155 !important;
+}
+
+/* Forçar dark mode em wrappers comuns do Ant Design */
+body:not(.light-mode) .ant-modal,
+body:not(.light-mode) .ant-modal-content,
+body:not(.light-mode) .ant-drawer,
+body:not(.light-mode) .ant-drawer-content,
+body:not(.light-mode) .ant-table,
+body:not(.light-mode) .ant-table-content,
+body:not(.light-mode) .ant-table-cell,
+body:not(.light-mode) .ant-tabs,
+body:not(.light-mode) .ant-tabs-content,
+body:not(.light-mode) .ant-collapse,
+body:not(.light-mode) .ant-collapse-content,
+body:not(.light-mode) .ant-collapse-item,
+body:not(.light-mode) .ant-list,
+body:not(.light-mode) .ant-list-item,
+body:not(.light-mode) .ant-descriptions,
+body:not(.light-mode) .ant-descriptions-item-content,
+body:not(.light-mode) .ant-descriptions-item-label {
+  background: #23263a !important;
+  color: #f1f5f9 !important;
+}
+
+/* Forçar dark em backgrounds inline e variantes RGB/HEX */
+body:not(.light-mode) [style*="background-color: #fff"],
+body:not(.light-mode) [style*="background-color: rgb(255, 255, 255)"],
+body:not(.light-mode) [style*="background-color: #f6f8fa"],
+body:not(.light-mode) [style*="background-color: rgb(246, 248, 250)"],
+body:not(.light-mode) [style*="background: #fff"],
+body:not(.light-mode) [style*="background: rgb(255, 255, 255)"],
+body:not(.light-mode) [style*="background: #f6f8fa"],
+body:not(.light-mode) [style*="background: rgb(246, 248, 250)"] {
+  background: #23263a !important;
+  color: #f1f5f9 !important;
+}
+
+/* Forçar cor de texto em todos os descendentes de wrappers escuros */
+body:not(.light-mode) .ant-modal *,
+body:not(.light-mode) .ant-drawer *,
+body:not(.light-mode) .ant-table *,
+body:not(.light-mode) .ant-tabs *,
+body:not(.light-mode) .ant-collapse *,
+body:not(.light-mode) .ant-list *,
+body:not(.light-mode) .ant-descriptions * {
+  color: #f1f5f9 !important;
+}
+
+/* Remover box-shadow claro em dark mode */
+body:not(.light-mode) .ant-card, 
+body:not(.light-mode) .ant-modal, 
+body:not(.light-mode) .ant-drawer, 
+body:not(.light-mode) .ant-table, 
+body:not(.light-mode) .ant-collapse, 
+body:not(.light-mode) .ant-tabs {
+  box-shadow: none !important;
+} 

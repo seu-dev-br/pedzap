@@ -1,0 +1,248 @@
+/* Classes utilitárias para a paleta PedZap */
+
+/* Cores de fundo */
+.bg-azul-confianca {
+  background-color: var(--color-azul-confianca) !important;
+}
+
+.bg-verde-impulso {
+  background-color: var(--color-verde-impulso) !important;
+}
+
+.bg-ciano-ativo {
+  background-color: var(--color-ciano-ativo) !important;
+}
+
+.bg-grafite-focado {
+  background-color: var(--color-grafite-focado) !important;
+}
+
+.bg-branco-nuvem {
+  background-color: var(--color-branco-nuvem) !important;
+}
+
+/* Cores de texto */
+.text-azul-confianca {
+  color: var(--color-azul-confianca) !important;
+}
+
+.text-verde-impulso {
+  color: var(--color-verde-impulso) !important;
+}
+
+.text-ciano-ativo {
+  color: var(--color-ciano-ativo) !important;
+}
+
+.text-grafite-focado {
+  color: var(--color-grafite-focado) !important;
+}
+
+.text-branco-nuvem {
+  color: var(--color-branco-nuvem) !important;
+}
+
+/* Bordas */
+.border-azul-confianca {
+  border-color: var(--color-azul-confianca) !important;
+}
+
+.border-verde-impulso {
+  border-color: var(--color-verde-impulso) !important;
+}
+
+.border-ciano-ativo {
+  border-color: var(--color-ciano-ativo) !important;
+}
+
+.border-grafite-focado {
+  border-color: var(--color-grafite-focado) !important;
+}
+
+.border-branco-nuvem {
+  border-color: var(--color-branco-nuvem) !important;
+}
+
+/* Botões personalizados */
+.btn-pedzap-primary {
+  background-color: var(--color-verde-impulso) !important;
+  border-color: var(--color-verde-impulso) !important;
+  color: white !important;
+  transition: all 0.2s ease;
+}
+
+.btn-pedzap-primary:hover {
+  background-color: #00b37a !important;
+  border-color: #00b37a !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 196, 140, 0.3);
+}
+
+.btn-pedzap-secondary {
+  background-color: var(--color-azul-confianca) !important;
+  border-color: var(--color-azul-confianca) !important;
+  color: var(--color-branco-nuvem) !important;
+  transition: all 0.2s ease;
+}
+
+.btn-pedzap-secondary:hover {
+  background-color: #1e3a5f !important;
+  border-color: #1e3a5f !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(42, 77, 140, 0.3);
+}
+
+.btn-pedzap-accent {
+  background-color: var(--color-ciano-ativo) !important;
+  border-color: var(--color-ciano-ativo) !important;
+  color: white !important;
+  transition: all 0.2s ease;
+}
+
+.btn-pedzap-accent:hover {
+  background-color: #1bc4b8 !important;
+  border-color: #1bc4b8 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(47, 226, 213, 0.3);
+}
+
+/* Cards personalizados */
+.card-pedzap {
+  background-color: var(--color-branco-nuvem) !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(42, 77, 140, 0.1) !important;
+  transition: all 0.2s ease;
+}
+
+.card-pedzap:hover {
+  box-shadow: 0 8px 24px rgba(42, 77, 140, 0.15) !important;
+  transform: translateY(-2px);
+}
+
+.card-pedzap-header {
+  background-color: var(--color-azul-confianca) !important;
+  color: var(--color-branco-nuvem) !important;
+  padding: 16px 20px !important;
+  border-radius: 8px 8px 0 0 !important;
+  font-weight: 600 !important;
+}
+
+/* Status indicators */
+.status-success {
+  color: var(--color-verde-impulso) !important;
+  background-color: rgba(0, 196, 140, 0.1) !important;
+  padding: 4px 8px !important;
+  border-radius: 4px !important;
+  font-weight: 500 !important;
+}
+
+.status-info {
+  color: var(--color-ciano-ativo) !important;
+  background-color: rgba(47, 226, 213, 0.1) !important;
+  padding: 4px 8px !important;
+  border-radius: 4px !important;
+  font-weight: 500 !important;
+}
+
+.status-warning {
+  color: #f39c12 !important;
+  background-color: rgba(243, 156, 18, 0.1) !important;
+  padding: 4px 8px !important;
+  border-radius: 4px !important;
+  font-weight: 500 !important;
+}
+
+.status-error {
+  color: #e74c3c !important;
+  background-color: rgba(231, 76, 60, 0.1) !important;
+  padding: 4px 8px !important;
+  border-radius: 4px !important;
+  font-weight: 500 !important;
+}
+
+/* Gradientes */
+.gradient-primary {
+  background: linear-gradient(135deg, var(--color-azul-confianca), var(--color-ciano-ativo)) !important;
+}
+
+.gradient-success {
+  background: linear-gradient(135deg, var(--color-verde-impulso), var(--color-ciano-ativo)) !important;
+}
+
+.gradient-warm {
+  background: linear-gradient(135deg, var(--color-azul-confianca), var(--color-verde-impulso)) !important;
+}
+
+/* Links */
+.link-pedzap {
+  color: var(--color-ciano-ativo) !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease;
+}
+
+.link-pedzap:hover {
+  color: #1bc4b8 !important;
+  text-decoration: underline !important;
+}
+
+/* Inputs personalizados */
+.input-pedzap {
+  border: 2px solid #e0e0e0 !important;
+  border-radius: 6px !important;
+  transition: border-color 0.2s ease;
+}
+
+.input-pedzap:focus {
+  border-color: var(--color-azul-confianca) !important;
+  box-shadow: 0 0 0 3px rgba(42, 77, 140, 0.1) !important;
+  outline: none !important;
+}
+
+/* Badges */
+.badge-pedzap {
+  background-color: var(--color-azul-confianca) !important;
+  color: var(--color-branco-nuvem) !important;
+  padding: 2px 8px !important;
+  border-radius: 12px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+
+.badge-success {
+  background-color: var(--color-verde-impulso) !important;
+  color: white !important;
+}
+
+.badge-accent {
+  background-color: var(--color-ciano-ativo) !important;
+  color: white !important;
+}
+
+/* Shadows */
+.shadow-pedzap {
+  box-shadow: 0 4px 12px rgba(42, 77, 140, 0.15) !important;
+}
+
+.shadow-pedzap-hover:hover {
+  box-shadow: 0 8px 24px rgba(42, 77, 140, 0.2) !important;
+}
+
+/* Transições */
+.transition-pedzap {
+  transition: all 0.2s ease !important;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .btn-pedzap-primary,
+  .btn-pedzap-secondary,
+  .btn-pedzap-accent {
+    font-size: 14px !important;
+    padding: 8px 16px !important;
+  }
+  
+  .card-pedzap {
+    margin: 8px !important;
+  }
+} 
